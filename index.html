@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="信大聚汇">
+    <meta name="author" content="lee">
+    <link rel="icon" href="南信大校徽.ico">
+
+    <title>信大聚汇</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <!--引入 jquery-3.4.0.min.js 和bootstrap.min.js-->
+    <script src="bootstrap-3.3.7-dist/js/jquery-3.4.0.min.js">
+	</script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js">
+	</script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+		div.jumbotron{
+			background-image: url(image/主页面大图.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		p.lead{
+			color: aliceblue;
+		}
+
+		.button2 {
+			background-color: #4CAF50; /* Green */
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			height: auto;
+			width: auto;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 19px;
+			margin: 4px 2px;
+			cursor: pointer;
+			-webkit-transition-duration: 0.4s; /* Safari */
+			transition-duration: 0.4s;
+			border-radius: 8px;
+			opacity: 1;
+			-webkit-animation-name: breath;                 /* 动画名称 */
+			-webkit-animation-duration: 3s;                 /* 动画时长3秒 */
+			-webkit-animation-timing-function: ease-in-out; /* 动画速度曲线：以低速开始和结束 */
+			-webkit-animation-iteration-count: infinite;    /* 播放次数：无限 */
+			
+		}
+		body{
+			background-image:url(image/主页面背景.jpeg);
+			
+			background-attachment: fixed;
+			background-repeat:repeat-x repeat-y;			
+		}
+		@keyframes breath {
+			from { box-shadow: 0; }                          /* 动画开始时的不透明度 */
+			50%  {			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}                          /* 动画50% 时的不透明度 */
+			to   { box-shadow: 0; }   			
+   
+		}
+
+		@-webkit-keyframes breath {
+			from { box-shadow: 0; }                          /* 动画开始时的不透明度 */
+			50%  {			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}                          /* 动画50% 时的不透明度 */
+			to   { box-shadow: 0; }                          /* 动画结束时的不透明度 */
+		}
+		.nav-pills>li>a{
+			color: ;
+			background-color:#fffef8;
+			opacity: 0.4;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		.nav-pills>li>a:hover{
+			color: ;
+			background-color:#fffef8;
+			opacity: 0.8;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+
+	</style>
+	
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="study.html">学在信大</a>
+
+          	</li>
+            <li role="presentation"><a href="food.html">食在信大</a>
+
+            </li>
+            <li role="presentation"><a href="life.html">信大生活</a>
+
+            </li>
+            <li role="presentetion"><a href="sports.html">信大运动</a>
+
+            </li>
+            <li role="presentetion"><a href="around.html">信大周边</a>    
+            
+            </li>
+            <li role="presentetion"><a href="transportation.html">信大出行</a>
+           
+            </li>
+            <li role="presentetion"><a href="school.html">信大校园</a>    
+            
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">导航</h3>
+      </div>
+
+      <div class="jumbotron"  >
+        <h1 style="color: aliceblue">信大聚汇</h1>
+        <p class="lead">一站浏览南京信息工程大学校内主要资源<br>获取校园最新信息<br>让校园生活变得更加便利</p>
+        <a href="study.html"><button class="button button2"><span>开启旅程</span></button></a>
+
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>学在信大</h4>
+          <p>汇集各类南京信息工程大学校内基础网址，提供各类在线服务</p>
+
+          <h4>食在信大</h4>
+          <p>南京信息工程大学六大食堂优选，以最好的质量服务于信大师生</p>
+
+          <h4>信大生活</h4>
+          <p>汇集南京信息工程大学超市，校园快递服务网点等各类信息</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>信大运动</h4>
+          <p>提供篮球、足球、网球、乒乓球、排球等各类运动场馆开放信息</p>
+
+          <h4>信大周边</h4>
+          <p>半小时生活圈，遴选涵盖学校周边各类优质聚会聚餐地</p>
+
+          <h4>信大出行</h4>
+          <p>校园班车、教室课间接驳车、交通班车等时刻表在线浏览</p>
+        
+        </div>
+      </div>
+
+      <footer class="footer" align="center">
+        <p>Copyright &copy; 2019 lee. All Right Reserved.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
